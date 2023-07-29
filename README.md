@@ -1,4 +1,4 @@
-# ejemplos-web
+# Ejemplos web
 archivos de ejemplo relacionados a desarrollo web
 
 El archivo con etiquetas HTML5 con ejemplos de para que se utilizan se puede ver en vesta url 
