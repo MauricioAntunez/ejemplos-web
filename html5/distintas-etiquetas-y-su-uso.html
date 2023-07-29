@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Título de la página</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección principal -->
+    <main>
+        <!-- Sección 1 -->
+        <section>
+            <h2>Sección 1</h2>
+            <p>Este es un párrafo dentro de la sección 1.</p>
+            <!-- Elemento de audio -->
+            <div>
+                <audio controls>
+                    <source src="mi_audio.mp3" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+            </div>
+<div>
+    <!-- Elemento de video -->
+    <video width="320" height="240" controls>
+        <source src="mi_video.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+    </video>
+</div>
+        </section>
+
+        <!-- Sección 2 -->
+        <section>
+            <h2>Sección 2</h2>
+            <p>Este es otro párrafo dentro de la sección 2.</p>
+            <!-- Elemento de imagen con atributo "srcset" para imágenes responsivas -->
+            <img src="imagen_grande.jpg"
+                 srcset="imagen_pequena.jpg 320w,
+                         imagen_mediana.jpg 640w,
+                         imagen_grande.jpg 1280w"
+                 alt="Imagen de ejemplo">
+        </section>
+    </main>
+
+    <!-- Barra lateral -->
+    <aside>
+        <h3>Barra lateral</h3>
+        <!-- Etiqueta de datos -->
+        <p>Mi información de contacto es <data value="555-123-4567">555-123-4567</data>.</p>
+    </aside>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Derechos de autor &copy; 2023 - Mi sitio web de ejemplo.</p>
+        <!-- Elemento de enlace para enviar correos electrónicos -->
+        <p>Contáctanos: <a href="mailto:contacto@misitioweb.com">contacto@misitioweb.com</a></p>
+    </footer>
+
+    <!-- Elemento de línea -->
+    <hr>
+
+    <!-- Elemento de artículo -->
+    <article>
+        <h2>Artículo 1</h2>
+        <p>Contenido del artículo 1.</p>
+    </article>
+
+    <!-- Elemento de tiempo -->
+    <p>La fecha actual es <time datetime="2023-07-29">29 de julio de 2023</time>.</p>
+
+    <!-- Elemento de detalles y resumen -->
+    <details>
+        <summary>Detalles</summary>
+        <p>Contenido de los detalles.</p>
+    </details>
+
+    <!-- Elemento de figura y leyenda -->
+    <figure>
+        <img src="imagen.jpg" alt="Descripción de la imagen">
+        <figcaption>Figura: Descripción de la imagen.</figcaption>
+    </figure>
+
+    <!-- Elemento de subrayado -->
+    <p>Este es un <u>texto subrayado</u>.</p>
+
+    <!-- Elemento de marca -->
+    <p>Este es un texto <mark>resaltado</mark>.</p>
+
+    <!-- Elemento de progreso -->
+    <progress value="50" max="100"></progress>
+
+    <!-- Elemento de citas -->
+    <blockquote>
+        <p>Una cita famosa.</p>
+        <cite>Nombre del autor</cite>
+    </blockquote>
+
+    <!-- Elemento de lista desplegable -->
+    <label for="frutas">Selecciona una fruta:</label>
+    <select id="frutas">
+        <option value="manzana">Manzana</option>
+        <option value="banana">Banana</option>
+        <option value="naranja">Naranja</option>
+    </select>
+
+    <!-- Elemento de canvas (lienzo para dibujar) -->
+    <canvas id="miCanvas" width="200" height="100"></canvas>
+    <script>
+        const canvas = document.getElementById('miCanvas');
+        const ctx = canvas.getContext('2d');
+        ctx.fillStyle = 'blue';
+        ctx.fillRect(10, 10, 150, 80);
+    </script>
+    <hr>
+    <!-- Etiqueta <h1> a <h6> para títulos -->
+        <h1>Título de nivel 1</h1>
+        <h2>Título de nivel 2</h2>
+        <h3>Título de nivel 3</h3>
+        <h4>Título de nivel 4</h4>
+        <h5>Título de nivel 5</h5>
+        <h6>Título de nivel 6</h6>
+        <br>
+    
+        <!-- Etiqueta <p> para párrafos -->
+        <p>Este es un párrafo de ejemplo. <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <br>
+    
+        <!-- Etiqueta <strong> para texto en negrita -->
+        <p>Este es un texto <strong>en negrita</strong>.</p>
+        <br>
+    
+        <!-- Etiqueta <em> para texto en cursiva -->
+        <p>Este es un texto <em>en cursiva</em>.</p>
+        <br>
+    
+        <!-- Etiqueta <s> para texto tachado -->
+        <p>Este es un texto <s>tachado</s>.</p>
+        <br>
+    
+        <!-- Etiqueta <u> para texto subrayado -->
+        <p>Este es un texto <u>subrayado</u>.</p>
+        <br>
+    
+        <!-- Etiqueta <mark> para resaltar texto -->
+        <p>Este es un texto <mark>resaltado</mark>.</p>
+        <br>
+    
+        <!-- Etiqueta <code> para mostrar código fuente -->
+        <p>Este es un ejemplo de <code>console.log('Hola, mundo!');</code></p>
+        <br>
+    
+        <!-- Etiqueta <blockquote> para citas -->
+        <blockquote>
+            <p>Esto es una cita.</p>
+            <cite>Nombre del autor</cite>
+        </blockquote>
+        <br>
+    
+        <!-- Etiqueta <abbr> para abreviaturas -->
+        <p><abbr title="Organización de las Naciones Unidas">ONU</abbr> es una organización internacional.</p>
+        <br>
+    
+        <!-- Etiqueta <sup> y <sub> para superíndices y subíndices -->
+        <p>E=mc<sup>2</sup> (la fórmula de Einstein)</p>
+        <p>H<sub>2</sub>O (agua)</p>
+        <br>
+    
+        <!-- Etiqueta <pre> para mostrar texto preformateado -->
+        <pre>
+        function saludar() {
+            console.log('Hola, mundo!');
+        }
+        </pre>
+        <br>
+    
+        <!-- Etiqueta <hr> para una línea horizontal -->
+        <p>Este es un párrafo antes de la línea horizontal.</p>
+        <hr>
+        <p>Este es un párrafo después de la línea horizontal.</p>
+        <br>
+    
+        <!-- Etiqueta <br> para un salto de línea -->
+        <p>Este es un texto.<br>Este es otro texto después de un salto de línea.</p>
+        <br>
+    
+        <!-- Etiqueta <a> para enlaces -->
+        <p>Visita <a href="https://www.ejemplo.com">ejemplo.com</a> para más información.</p>
+        <br>
+    
+        <!-- Etiqueta <div> para dividir contenido -->
+        <div>
+            <p>Este es un texto dentro de un div.</p>
+        </div>
+<hr>
+<h2>etiquetas para formato de texto avanzado</h2>
+<!-- Etiqueta <b> para texto en negrita -->
+    <p>Este es un texto <b>en negrita</b>.</p>
+    <br>
+
+    <!-- Etiqueta <i> para texto en cursiva -->
+    <p>Este es un texto <i>en cursiva</i>.</p>
+    <br>
+
+    <!-- Etiqueta <del> para texto tachado -->
+    <p>Este es un texto <del>tachado</del>.</p>
+    <br>
+
+    <!-- Etiqueta <ins> para texto subrayado -->
+    <p>Este es un texto <ins>subrayado</ins>.</p>
+    <br>
+
+    <!-- Etiqueta <strong> para texto importante -->
+    <p>Este es un texto <strong>importante</strong>.</p>
+    <br>
+
+    <!-- Etiqueta <em> para texto enfatizado -->
+    <p>Este es un texto <em>enfatizado</em>.</p>
+    <br>
+
+    <!-- Etiqueta <small> para texto pequeño -->
+    <p>Este es un texto <small>pequeño</small>.</p>
+    <br>
+
+    <!-- Etiqueta <big> para texto grande -->
+    <p>Este es un texto <big>grande</big>.</p>
+    <br>
+
+    <!-- Etiqueta <sub> para texto como subíndice -->
+    <p>H<sub>2</sub>O (agua)</p>
+    <br>
+
+    <!-- Etiqueta <sup> para texto como superíndice -->
+    <p>E=mc<sup>2</sup> (la fórmula de Einstein)</p>
+    <br>
+
+    <!-- Etiqueta <mark> para resaltar texto -->
+    <p>Este es un texto <mark>resaltado</mark>.</p>
+    <br>
+
+    <!-- Etiqueta <q> para citas cortas -->
+    <p>Albert Einstein dijo: <q>E=mc^2</q>.</p>
+    <br>
+
+    <!-- Etiqueta <cite> para citas de obras -->
+    <p>La novela <cite>Cien años de soledad</cite> es escrita por Gabriel García Márquez.</p>
+    <br>
+
+    <!-- Etiqueta <dfn> para definiciones -->
+    <p><dfn title="HyperText Markup Language">HTML</dfn> es un lenguaje de marcado para crear páginas web.</p>
+    <br>
+
+    <!-- Etiqueta <code> para mostrar código fuente -->
+    <p>Este es un ejemplo de <code>console.log('Hola, mundo!');</code></p>
+    <br>
+
+    <!-- Etiqueta <samp> para mostrar salida de comandos -->
+    <p>Escriba <samp>help</samp> para ver una lista de comandos.</p>
+    <br>
+
+    <!-- Etiqueta <kbd> para mostrar texto de teclado -->
+    <p>Pulse la tecla <kbd>Enter</kbd> para enviar el formulario.</p>
+    <br>
+
+    <!-- Etiqueta <var> para mostrar variables -->
+    <p>La variable <var>x</var> es igual a 10.</p>
+    <br>
+<hr>
+    <!-- Formulario -->
+    <form action="#" method="post">
+
+        <!-- Input de texto -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="50" placeholder="Ingresa tu nombre" pattern="[A-Za-z]+">
+        <br>
+
+        <!-- Input de correo electrónico -->
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required placeholder="usuario@dominio.com">
+        <br>
+
+        <!-- Input de contraseña -->
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" required minlength="8">
+        <br>
+
+        <!-- Input de número -->
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" required min="18" max="100" step="1">
+        <br>
+
+        <!-- Input de fecha -->
+        <label for="fecha">Fecha de nacimiento:</label>
+        <input type="date" id="fecha" name="fecha" required>
+        <br>
+
+        <!-- Input de teléfono -->
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" placeholder="Ej. 1234567890">
+        <br>
+
+        <!-- Input de URL -->
+        <label for="sitio-web">Sitio web:</label>
+        <input type="url" id="sitio-web" name="sitio-web" placeholder="http://www.ejemplo.com">
+        <br>
+
+        <!-- Input de archivo -->
+        <label for="archivo">Subir archivo:</label>
+        <input type="file" id="archivo" name="archivo">
+        <br>
+
+        <!-- Input de checkbox -->
+        <label>Intereses:</label>
+        <input type="checkbox" id="interes1" name="interes[]" value="Deportes">
+        <label for="interes1">Deportes</label>
+        <input type="checkbox" id="interes2" name="interes[]" value="Música">
+        <label for="interes2">Música</label>
+        <br>
+
+        <!-- Input de radio -->
+        <label>Estado civil:</label>
+        <input type="radio" id="soltero" name="estado-civil" value="Soltero">
+        <label for="soltero">Soltero</label>
+        <input type="radio" id="casado" name="estado-civil" value="Casado">
+        <label for="casado">Casado</label>
+        <br>
+
+        <!-- Área de texto -->
+        <label for="comentarios">Comentarios:</label>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50" maxlength="200" placeholder="Escribe tus comentarios"></textarea>
+        <br>
+
+        <!-- Botón de envío -->
+        <input type="submit" value="Enviar">
+        <hr>1<!-- Etiqueta <picture> para proporcionar imágenes en diferentes resoluciones -->
+    <picture>
+        <source srcset="imagen_grande.jpg" media="(min-width: 1200px)">
+        <source srcset="imagen_mediana.jpg" media="(min-width: 768px)">
+        <img src="imagen_pequena.jpg" alt="Descripción de la imagen">
+    </picture>
+    <br>
+
+    <!-- Etiqueta <img> para mostrar una imagen -->
+    <img src="imagen.jpg" alt="Descripción de la imagen">
+    <br>
+
+    <!-- Etiqueta <figure> y <figcaption> para agrupar una imagen con su descripción -->
+    <figure>
+        <img src="imagen.jpg" alt="Descripción de la imagen">
+        <figcaption>Descripción de la imagen.</figcaption>
+    </figure>
+    <br>
+
+    <!-- Etiqueta <svg> para mostrar gráficos vectoriales -->
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+    </svg>
+    <br>
+
+    <!-- Etiqueta <map> y <area> para crear mapas de imágenes -->
+    <img src="plano.png" alt="Plano del edificio" usemap="#mapa-edificio">
+    <map name="mapa-edificio">
+        <area shape="rect" coords="100,100,200,200" href="piso1.html" alt="Piso 1">
+        <area shape="rect" coords="300,100,400,200" href="piso2.html" alt="Piso 2">
+    </map>
+    <br>
+
+    <!-- Etiqueta <canvas> para dibujar gráficos con JavaScript -->
+    <canvas id="miCanvas" width="200" height="100"></canvas>
+    <script>
+        const canvas = document.getElementById('miCanvas');
+        const ctx = canvas.getContext('2d');
+        ctx.fillStyle = 'blue';
+        ctx.fillRect(10, 10, 150, 80);
+    </script>
+    <br>
+
+    <!-- Etiqueta <video> para reproducir videos -->
+    <video width="320" height="240" controls>
+        <source src="mi_video.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+    </video>
+    <br>
+
+    <!-- Etiqueta <audio> para reproducir audio -->
+    <audio controls>
+        <source src="mi_audio.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+    </form>
+
+    <hr>
+    
+    <footer>
+        <h2>Contacto</h2>
+
+        <!-- Dirección -->
+        <address>
+            <p>Nombre de la empresa de ejemplo</p>
+            <p>Dirección: Calle Principal 123, Ciudad</p>1
+            <p>Teléfono: 555666777-123-4567</p>
+            <p>Correo electrónico: contacto@empresa-de-ejemplo.com</p>
+        </address>
+
+        <!-- Mapa de ubicación -->
+        <div>
+            <h3>Ubicación</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387744.42322829496!2d-74.25986719880163!3d40.697149422306204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM0DCsDI5JzQ5LjMiTiA3NMKwMTUnMDguOCJX!5e0!3m2!1sen!2sus!4v1627523198219!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </footer>
+    <hr>
+    <h1>Ejemplo de tabla con etiquetas HTML5</h1>
+
+    <!-- Tabla principal -->
+    <table>
+
+        <!-- Cabecera de la tabla -->
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>País</th>
+            </tr>
+        </thead>
+
+        <!-- Cuerpo de la tabla -->
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>30</td>
+                <td>Estados Unidos</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>25</td>
+                <td>Canadá</td>
+            </tr>
+            <tr>
+                <td>Maria García</td>
+                <td>28</td>
+                <td>México</td>
+            </tr>
+        </tbody>
+
+        <!-- Pie de la tabla -->
+        <tfoot>
+            <tr>
+                <td colspan="3">Total de personas: 3</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+<p>Si quieres aprender más sobre HTML5 visita <a href="https://developer.mozilla.org/es/docs/Learn/HTML/Introduction_to_HTML" target="_blank" rel="noopener"></a></p>
+</body>
+</html>
